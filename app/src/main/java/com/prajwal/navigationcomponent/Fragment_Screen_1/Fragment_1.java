@@ -9,10 +9,14 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavArgs;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
+import androidx.navigation.Navigator;
+import androidx.navigation.fragment.FragmentNavigator;
 
+import com.prajwal.navigationcomponent.Fragment_Screen_2.Fragment_2;
 import com.prajwal.navigationcomponent.R;
 
 /**
@@ -47,8 +51,16 @@ Button button;
 //            NavController navController = new NavController(this.getContext());
 //            navController.navigate(R.id.fragment_2);
 
-            NavDirections action =
-                    Fragment_1Directions.actionFragment1ToFragment2();
+//            new Fragment_1Args.Builder().setArg1("Hello Prajwal !!!");
+
+//            NavDirections action =
+//                    Fragment_1Directions.actionFragment1ToFragment2();
+
+
+//            new Fragment_1Args.Builder().setArg1("Hello Prajwal !!!").build();
+
+
+            NavDirections action = Fragment_1Directions.actionFragment1ToFragment2().setArg1("Hello Prajwal !!!!");
             Navigation.findNavController(view).navigate(action);
 
         });
