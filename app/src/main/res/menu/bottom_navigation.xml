@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fragment_1"
+        android:title="Menu"
+        android:icon="@drawable/ic_baseline_looks_one_24"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/fragment_2"
+        android:title="Menu"
+        android:icon="@drawable/ic_baseline_looks_two_24"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/fragment_3"
+        android:title="Menu"
+        android:icon="@drawable/ic_baseline_looks_3_24"
+        app:showAsAction="withText"/>
+</menu>

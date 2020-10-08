@@ -1,4 +1,4 @@
-package com.prajwal.navigationcomponent.Fragment_Screen_2;
+package com.prajwal.navigationcomponent.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 
-
+//import com.prajwal.navigationcomponent.Fragment_Screen_2.Fragment_2Args;
 import com.prajwal.navigationcomponent.R;
 
 /**
@@ -45,11 +45,11 @@ public class Fragment_2 extends Fragment {
 //        String toast_message = new Fragment_1Args.Builder().getArg1();
 //
         //correct code...
-        if(getArguments() != null)
-        {
-            String toast_message = Fragment_2Args.fromBundle(getArguments()).getArg1();
-            Toast.makeText(view.getContext(), "Message: "+ toast_message, Toast.LENGTH_SHORT).show();
-        }
+//        if(getArguments() != null)
+//        {
+//            String toast_message = Fragment_2Args.fromBundle(getArguments()).getArg1();
+//            Toast.makeText(view.getContext(), "Message: "+ toast_message, Toast.LENGTH_SHORT).show();
+//        }
 
 
 

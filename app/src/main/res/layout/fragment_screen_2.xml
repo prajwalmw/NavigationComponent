@@ -4,10 +4,11 @@
     android:background="@android:color/holo_green_light">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fragment Screen 2"
         android:textStyle="bold"
+        android:layout_centerInParent="true"
         android:textSize="30sp"/>
 
 </RelativeLayout>

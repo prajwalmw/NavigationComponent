@@ -7,25 +7,32 @@
 
     <fragment
         android:id="@+id/fragment_1"
-        android:name="com.prajwal.navigationcomponent.Fragment_Screen_1.Fragment_1"
+        android:name="com.prajwal.navigationcomponent.fragments.Fragment_1"
         android:label="Fragment_1"
         tools:layout="@layout/fragment_screen_1">
         <action
             android:id="@+id/action_fragment_1_to_fragment_2"
             app:destination="@id/fragment_2" />
-
     </fragment>
 
     <fragment
         android:id="@+id/fragment_2"
-        android:name="com.prajwal.navigationcomponent.Fragment_Screen_2.Fragment_2"
+        android:name="com.prajwal.navigationcomponent.fragments.Fragment_2"
         android:label="Fragment_2"
-        tools:layout="@layout/fragment_screen_2" >
+        tools:layout="@layout/fragment_screen_2">
 
-    <argument
-        android:name="arg1"
-        app:argType="string"
-        android:defaultValue="Hello Name!!!"/>
+        <argument
+            android:name="arg1"
+            android:defaultValue="Hello Name!!!"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragment_2_to_fragment_3"
+            app:destination="@id/fragment_3" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_3"
+        android:name="com.prajwal.navigationcomponent.fragments.Fragment_3"
+        android:label="fragment_3"
+        tools:layout="@layout/fragment_3" />
 
 </navigation>
